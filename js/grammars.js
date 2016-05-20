@@ -6,7 +6,7 @@ grammars.garden = {
 	concept: ["the universe", "the cosmos", "the earth", "water", "fear", "peace", "understanding", "the mind", "home", "loss"],
 	adj: ["tall", "slender", "smooth", "striated", "rippling", "grey", "pale", "dark"],
 		relationship: ["overlooks", "is surrounded by"],
-node: ["#adj.a# rock|This rock represents #concept#"],
+node: ["#adj.a# rock|This rock represents #concept#", "🌱|"],
 };
 
 
