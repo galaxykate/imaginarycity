@@ -12,10 +12,13 @@ node: ["#adj.a# rock|This rock represents #concept#"],
 
 grammars.city = {
 	concept: ["war", "loss", "heroism", "victory", "patriotism", "love of the city", "the Arts", "the Sciences"],
+	itemAdj: ["used", "blackmarket", "discount", "novelty", "luxury", "well-worn", "illicit", "questionable"],
+	shop:["market", "stall", "shop", "cornerstore"],
+	sellableItems: ["cats", "coffee", "coffeepots", "magazines", "sunglasses", "books", "liquor", "wallets", "shoes", "clothing","magazines","desires", "dreams","rumors", "sausages", "mattresses", "electronics"],
 	statue: ["statue", "bronze figure", "bas relief"],
 	statueType: ["horse", "horse and rider", "woman", "soldier", "mother", "nurse", "king", "queen", "lion", "dragon"],
-	relationship: ["overlooks", "leads to", "is placed below", "can see", "indicates a road to"],
-	node: ["#statue# of #statueType.a#|This represents #concept#"],
+	relationship: ["overlooks", "blocks the way to", "leads to", "is placed below", "can see", "indicates a road to"],
+	node: ["#statue.capitalize# of #statueType.a#|This represents #concept#", "[items:#sellableItems#]#shop.capitalize# selling #items#|This shop sells #itemAdj# #items#"],
 };
 
 
